@@ -1,0 +1,72 @@
+.header{
+    background: #151515 url('../images/intro-bg.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+// Create black overlay for transparency (Part 1)
+.header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(14, 14, 14, 0.7);
+}
+// Create black overlay for transparency (Part 2)
+.header .text-container{
+    z-index: 10;
+}
+
+.header .roles{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.header .social{
+    bottom: 50px;
+
+}
+.project:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+
+@media(max-width: 767px){
+    .header .social i{
+        font-size: 30px;
+    }
+
+    // .header .roles i{
+    //     font-size: 18px !important;
+    // }
+
+    .about-content{
+        flex-direction: column;
+    }
+}
+
+.about-img{
+    width: 200px
+}
+
+.about{
+    margin-top: -9px;
+    background-color: #151515;
+}
+
+.profile{
+    margin-top: -9px;
+    background-color: #1c1c1c;
+}
+
+.portfolio{
+    margin-top: -9px;
+}
+
+.navbar-brand{
+    font-style: italic;
+}

@@ -1,11 +1,11 @@
-.header{
+.header {
     background: #151515 url('../images/intro-bg.png') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 // Create black overlay for transparency (Part 1)
-.header::after{
+.header::after {
     content: '';
     position: absolute;
     top: 0;
@@ -14,29 +14,31 @@
     height: 100%;
     background: rgba(14, 14, 14, 0.7);
 }
+
 // Create black overlay for transparency (Part 2)
-.header .text-container{
+.header .text-container {
     z-index: 10;
 }
 
-.header .roles{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.header .roles {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 300;
 }
 
-.header .social{
+.header .social {
     bottom: 50px;
 
 }
-.project:hover{
+
+.project:hover {
     transform: scale(1.05);
     transition: all 0.5s ease-in-out;
     opacity: 0.8;
 }
 
 
-@media(max-width: 767px){
-    .header .social i{
+@media(max-width: 767px) {
+    .header .social i {
         font-size: 30px;
     }
 
@@ -44,29 +46,29 @@
     //     font-size: 18px !important;
     // }
 
-    .about-content{
+    .about-content {
         flex-direction: column;
     }
 }
 
-.about-img{
+.about-img {
     width: 200px
 }
 
-.about{
+.about {
     margin-top: -9px;
     background-color: #151515;
 }
 
-.profile{
+.profile {
     margin-top: -9px;
     background-color: #1c1c1c;
 }
 
-.portfolio{
+.portfolio {
     margin-top: -9px;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-style: italic;
 }

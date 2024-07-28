@@ -21,6 +21,7 @@ function typeText(text, typingElem, typingDelay){
 
 document.addEventListener('DOMContentLoaded', runTypingEffect)
 
+// Refresh to Home
 function redirectToStart() {
     // Check if the page is being reloaded
     const entries = performance.getEntriesByType("navigation");
@@ -34,4 +35,15 @@ function redirectToStart() {
 window.onload = redirectToStart;
 
 
+// Replace Text Rigth Below Header
+const checkReplace = document.querySelector('.replace-me');
 
+if(checkReplace != null){
+    const replace = new ReplaceMe(checkReplace, {
+        animation: 'animated fadeIn',
+        speed: 2000,
+        seperator: ',',
+        loopCount: 'infinite',
+        autoRun: true
+    });
+}

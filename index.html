@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/lightbox.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Faiz Q - Developer</title>
 </head>
 
@@ -86,14 +87,14 @@
   <section id="about" class="about py-5">
     <div class="container">
       <div class="text-center">
-        <h4 class="text-uppercase fw-bold text-primary">
+        <h4 class="text-uppercase fw-bold text-primary" data-aos= "zoom-in-left">
           About Me
         </h4>
         <hr class="w-25 mx-auto">
       </div>
       <div class="about-content d-flex gap-5 align-items-center h-100">
-        <img src="images/faiz.png" alt="" class="about-img img-fluid rounded-circle">
-        <h5 class="text-white">
+        <img src="images/faiz.png" alt="" class="about-img img-fluid rounded-circle" data-aos= "fade-up">
+        <h5 class="text-white" data-aos= "zoom-in">
           Human problems are complex, and technological innovation that attempts to solve them
           requires an inclusive mindset in addition to technical acumen. That's why I'm dedicated 
           to pushing the boundaries of what technology can achieve, creating solutions that are both innovative and inclusive.
@@ -147,7 +148,7 @@
       </div>
       <div class="row mt-3 text-center">
         <div class="col-12">
-          <a href="#" class="btn btn-outline-light btn-lg text-uppercase px-5 mx-3 my-2 transition ease-in-out delay-150 -translate-y-px-hover duration-300 scale-110-hover">Resume</a>
+          <a href="#" class="btn btn-outline-light btn-lg text-uppercase px-5 mx-3 my-2 transition ease-in-out delay-150 -translate-y-px-hover duration-300 scale-110-hover" data-aos= "zoom-in">Resume</a>
         </div>
       </div>
       <br/>
@@ -158,9 +159,9 @@
    <section id = "projects" class="projects py-5 bg-secondary">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="text-uppercase fw-bold text-primary">Projects</h2>
+        <h2 class="text-uppercase fw-bold text-primary" data-aos= "zoom-in-left">Projects</h2>
         <hr class="w-25 mx-auto text-white"/>
-        <h2 class="mb-4 text-white">Check out my projects!</h2>
+        <h2 class="mb-4 text-white" data-aos= "fade-in">Check out my projects!</h2>
       </div>
       <div class="row">
         <div class="col-md-6 mb-4">
@@ -255,7 +256,11 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/lightbox-plus-jquery.min.js"></script>
   <script src = "js/replaceme.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 <footer>
